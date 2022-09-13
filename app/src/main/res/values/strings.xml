@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">strongestavenger</string>
+    <string name="wanda_photo">Wanda Photo</string>
+    <string name="strange_photo">Strange Photo</string>
+    <string name="carol_photo">Carol Danvers Photo</string>
+    <string name="selected_character_photo">Selected Character Photo</string>
+</resources>

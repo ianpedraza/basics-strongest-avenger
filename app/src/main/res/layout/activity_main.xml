@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivWanda"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:contentDescription="@string/wanda_photo"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/ivStrange"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivStrange"
+        app:srcCompat="@drawable/wanda" />
+
+    <ImageView
+        android:id="@+id/ivSelected"
+        android:layout_width="@dimen/image_size_large"
+        android:layout_height="@dimen/image_size_large"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/selected_character_photo"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wanda" />
+
+    <ImageView
+        android:id="@+id/ivStrange"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/strange_photo"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/ivCarol"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivWanda"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelected"
+        app:srcCompat="@drawable/strange" />
+
+    <ImageView
+        android:id="@+id/ivCarol"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:contentDescription="@string/carol_photo"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivStrange"
+        app:layout_constraintTop_toTopOf="@+id/ivStrange"
+        app:srcCompat="@drawable/captain_marvel" />
+
+    <TextView
+        android:id="@+id/tvSelected"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSelected"
+        tools:text="The Scarlet Witch" />
+</androidx.constraintlayout.widget.ConstraintLayout>
